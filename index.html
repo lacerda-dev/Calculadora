@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora | Matheus Lacerda</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <div id="calculadora">
+
+        <input type="text" name="display" id="display" disabled value="0">
+
+        <div id="teclado">
+
+            <button class="botoes" onclick="limpar()">C</button>
+            <button class="botoes" onclick="apagar()"><span class="material-symbols-outlined">backspace</span></button>
+            <button class="botoes" onclick="entrada('/')">/</button>
+            <button class="botoes" onclick="entrada('*')">*</button>
+            <button class="botoes" onclick="entrada('7')">7</button>
+            <button class="botoes" onclick="entrada('8')">8</button>
+            <button class="botoes" onclick="entrada('9')">9</button>
+            <button class="botoes" onclick="entrada('-')">-</button>
+            <button class="botoes" onclick="entrada('4')">4</button>
+            <button class="botoes" onclick="entrada('5')">5</button>
+            <button class="botoes" onclick="entrada('6')">6</button>
+            <button class="botoes" onclick="entrada('+')">+</button>
+            <button class="botoes" onclick="entrada('1')">1</button>
+            <button class="botoes" onclick="entrada('2')">2</button>
+            <button class="botoes" onclick="entrada('3')">3</button>
+            <button id="btn-zero" class="botoes" onclick="entrada('0')">0</button>
+            <button class="botoes" onclick="entrada('.')">.</button>
+            <button id="btn-igual" class="botoes" onclick="calcular()">=</button>
+            
+        </div>
+    </div>
+
+    <footer><p>&copy Matheus Lacerda</p></footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
