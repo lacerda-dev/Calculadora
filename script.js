@@ -1,4 +1,5 @@
-let display = document.getElementById('display')
+const display = document.getElementById('display')
+
 
 function entrada(dados){
     if (display.value === '0'){
